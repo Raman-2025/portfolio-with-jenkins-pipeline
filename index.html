@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">DevOps Portfolio</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pipeline" class="nav-link">CI/CD Pipeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>DevOps Engineer</h1>
+                <p>Automating infrastructure, streamlining deployments, and bridging the gap between development and operations.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#pipeline" class="btn btn-secondary">CI/CD Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm a passionate DevOps engineer with hands-on experience in Linux, Jenkins, Docker, AWS EC2, Git, and GitHub. I specialize in creating efficient CI/CD pipelines that automate software delivery processes.</p>
+                    <p>My journey in DevOps began with a curiosity about how software gets from development to production seamlessly. Since then, I've been dedicated to learning and implementing best practices in infrastructure automation, containerization, and continuous integration.</p>
+                    <p>This portfolio website itself is a demonstration of DevOps principles, featuring a live CI/CD pipeline simulation that you can interact with below.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x400/3498db/ffffff?text=DevOps+Engineer" alt="DevOps Engineer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>Linux</h3>
+                    <p>System administration, shell scripting, and server management on various Linux distributions.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-jenkins"></i>
+                    </div>
+                    <h3>Jenkins</h3>
+                    <p>CI/CD pipeline creation, job configuration, and plugin management for automated builds and deployments.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker</h3>
+                    <p>Containerization, Dockerfile creation, image management, and container orchestration basics.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS EC2</h3>
+                    <p>EC2 instance management, security groups, AMIs, and cloud infrastructure deployment.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, branching strategies, pull requests, and repository management.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>CI/CD Pipelines</h3>
+                    <p>End-to-end pipeline design from code commit to deployment with automated testing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CI/CD Pipeline Section -->
+    <section id="pipeline" class="pipeline">
+        <div class="container">
+            <h2 class="section-title">CI/CD Pipeline Demonstration</h2>
+            <p class="section-subtitle">This interactive simulation demonstrates a typical DevOps pipeline using the technologies I've worked with.</p>
+            
+            <div class="pipeline-container">
+                <div class="pipeline-stages">
+                    <div class="stage completed" id="stage1">
+                        <div class="stage-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Source Code</h3>
+                        <p>Git Repository</p>
+                    </div>
+                    <div class="stage active" id="stage2">
+                        <div class="stage-icon">
+                            <i class="fab fa-jenkins"></i>
+                        </div>
+                        <h3>Build</h3>
+                        <p>Jenkins CI</p>
+                    </div>
+                    <div class="stage" id="stage3">
+                        <div class="stage-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <h3>Containerize</h3>
+                        <p>Docker</p>
+                    </div>
+                    <div class="stage" id="stage4">
+                        <div class="stage-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Deploy</h3>
+                        <p>AWS EC2</p>
+                    </div>
+                    <div class="stage" id="stage5">
+                        <div class="stage-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Verify</h3>
+                        <p>Testing</p>
+                    </div>
+                </div>
+                
+                <div class="pipeline-controls">
+                    <button id="startPipeline" class="btn btn-primary">Start Pipeline</button>
+                    <button id="resetPipeline" class="btn btn-danger">Reset Pipeline</button>
+                </div>
+                
+                <div class="pipeline-log" id="pipelineLog">
+Pipeline ready. Click "Start Pipeline" to begin the simulation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dockerized Web Application</h3>
+                        <p>A multi-container application using Docker and Docker Compose, with Nginx as a reverse proxy.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Nginx</span>
+                            <span class="tech-tag">Compose</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-jenkins"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Jenkins CI/CD Pipeline</h3>
+                        <p>Automated pipeline that builds, tests, and deploys a sample application to AWS EC2.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>AWS Infrastructure as Code</h3>
+                        <p>Terraform scripts to provision EC2 instances, security groups, and load balancers.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">EC2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>ramandeepkaur@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Remote / Available Worldwide</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dev"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 DevOps Engineer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
