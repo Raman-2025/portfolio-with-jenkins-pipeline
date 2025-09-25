@@ -1,9 +1,7 @@
-FROM nginx:alpine
+FROM node:alpine
+RUN npm install -g http-server
+WORKDIR /app
+COPY . .           
+EXPOSE 8000
+CMD ["http-server", "-p", "8000"]
 
-# Copy website files
-COPY . /usr/share/nginx/html/
-
-# Expose port 80 (nginx default)
-EXPOSE 80
-
-# nginx starts automatically
