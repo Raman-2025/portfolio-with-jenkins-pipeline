@@ -1,11 +1,3 @@
-#error filed
-'''FROM node:14
-WORKDIR /app
-COPY . .
-EXPOSE 8000
-CMD["node","index.html"]'''
-
-# Corrected Dockerfile
 # Use smaller Node.js alpine image
 FROM node:alpine
 
