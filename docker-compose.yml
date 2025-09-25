@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build: .
+    container_name: portfolio-website
+    ports:
+      - "8000:80"  # host:container port mapping
+    restart: unless-stopped
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge
